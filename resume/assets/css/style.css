@@ -1,0 +1,355 @@
+/*CSS wei mo*/
+
+body.landing #page-wrapper {
+    background-image: -moz-linear-gradient(top, rgba(157, 150, 150, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/FullSizeRender");
+    background-image: -webkit-linear-gradient(top, rgba(84, 81, 81, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/FullSizeRender.jpg");
+    background-image: -ms-linear-gradient(top, rgba(84, 81, 81, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/FullSizeRender.jpg");
+    background-image: linear-gradient(top, rgba(84, 81, 81, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/FullSizeRender.jpg");
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 0;
+}
+
+/*Banner1*/
+
+#banner {
+    height: 20vh;
+    min-height: 60vh;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.wrapper {
+    padding: 5em 0 4em 0;
+}
+
+/* .wrapper.style1 {
+        } */
+
+.wrapper.style1 h2, .wrapper.style1 p {
+    color: #ffffff;
+}
+
+.wrapper.style2 {
+    background-color: #1d242a;
+    color: #ffffff;
+    font-size: 0.8em;
+}
+
+.wrapper.style2 .wei-flew {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.wrapper.style2 .wei-flew .wei-flew-box {
+    padding: 4px 0 4px 0;
+    margin: 5px 5px 5px 5px;
+    min-width: 25vw;
+    text-align: left;
+}
+
+.wrapper.style2 .wei-flew .hrline {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/* .wrapper.style2 .wei-box {
+    text-align: center;
+    justify-content: center;
+} */
+
+.wrapper.style3 {
+    padding: 3em 0 4em 0;
+    background-color: #1d242a;
+}
+
+.wrapper.style3 .mycontent {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.8em;
+    padding: 4em 3em 2em 3em;
+    max-width: none;
+    width: 100%;
+}
+
+.wrapper.style3 .box44 {
+    padding: 4em 4em 2em 6em;
+    display: block;
+    position: relative;
+    text-align: left;
+    width: 50%;
+}
+
+.wrapper.style3 h2 {
+    color: rgba(255, 255, 255, 0.8);
+    ;
+}
+
+.storeflex {
+    flex: 50%;
+    flex-wrap: wrap;
+    max-width: 120px;
+}
+
+.store-img {
+    margin: 0px 0px 15px 0px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.store-img:hover {
+    cursor: pointer;
+}
+
+.ios-store {
+    margin-top: 8px;
+}
+
+/* .ios-store{
+
+} */
+
+header.major {
+    margin: 0 0 3.5em 0;
+}
+
+header.major h2 {
+    border-bottom: solid 2px #fff;
+    display: inline-block;
+    padding-bottom: 2px;
+    position: relative;
+}
+
+section {
+    text-align: center;
+}
+
+/* Form */
+
+form {
+    margin: 0 0 2em 0;
+}
+
+form .field {
+    margin: 0 0 2em 0;
+}
+
+form .field.half {
+    width: 50%;
+    float: left;
+    padding: 0 0 0 1em;
+}
+
+/*Banner2*/
+
+#banner2 {
+    height: 30vh;
+    min-height: 25em;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+/* Footer*/
+
+#footer {
+    padding: 1em 0 1em 0;
+    background-color: #1d242a;
+    text-align: center;
+}
+
+#footer .foot-title {
+    color: #eee;
+}
+
+#footer .copyright {
+    color: rgb(189, 185, 185);
+    font-size: 0.8em;
+    letter-spacing: 0.225em;
+    list-style: none;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+#footer .copyright li {
+    border-left: solid 1px rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    line-height: 1em;
+    margin-left: 1em;
+    padding-left: 1em;
+}
+
+/*mail format -----start-----*/
+
+#footer .wei-mail {
+    margin: 40px 0px 40px 0px;
+    display: flex;
+    flex-direction: row;
+    color: #eee;
+    text-align: center;
+    justify-content: center;
+}
+
+#footer .wei-mail .mail-flex0 .myimg {
+    margin: 10px 15px 0px 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+#footer .wei-mail .mail-flex1 .mail-firstcol, #footer .wei-mail .mail-flex1 .mail-secondcol {
+    display: flex;
+    flex-direction: row;
+}
+
+#footer .wei-mail .mail-flex1 .mail-thirdcol {
+    margin: 20px 0px 20px 0px;
+}
+
+.mail-name {
+    margin: 0px 25px 0px 25px;
+    height: 25px;
+}
+
+.mail-message {
+    margin: 0px 25px 0px 25px;
+    height: 15vh;
+    width: 40vw;
+}
+
+/*mail format  -----end-----*/
+
+/*icon */
+
+.icon {
+    text-decoration: none;
+    border-bottom: none;
+    position: relative;
+}
+
+/* other */
+
+.wei-line {
+    border-bottom: solid 2px #fff;
+}
+
+/*timeline  -----start-----*/
+
+.timeline-horizontal-line {
+    height: 4px;
+    background: #fff;
+    width: 80%;
+    position: relative;
+    top: 38px;
+    left: 20vh;
+}
+
+/*timeline 起始點*/
+
+.timeline-horizontal-line::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: 10px;
+    border: 10px solid #fff;
+}
+
+/*timeline 尾巴箭頭*/
+
+.timeline-horizontal-line::after {
+    content: "";
+    position: absolute;
+    top: -8px;
+    display: block;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-right: 0;
+    border-left: 20px solid #fff;
+    border-radius: 3px;
+    right: -10px;
+}
+
+.timeline-horizontal {
+    white-space: nowrap;
+    overflow-x: scroll;
+    padding: 34px 0 10px 0;
+    position: relative;
+}
+
+.timeline-horizontal .timeline-item {
+    display: inline-block;
+    vertical-align: top;
+    /* background: #eee; */
+    color: #eee;
+    margin: 20px;
+    padding: 10px;
+    font-size: 12px;
+    text-align: center;
+    position: relative;
+    border-radius: 3px;
+    min-width: 200px;
+    max-width: 400px;
+    font: bold 15px arial;
+    text-align: left;
+}
+
+.timeline-horizontal .timeline-item::before {
+    content: '';
+    display: block;
+    background: #06182E;
+    width: 20px;
+    height: 20px;
+    border-radius: 12px;
+    border: 3px solid #eee;
+    position: absolute;
+    left: 50%;
+    top: -28px;
+    margin-left: -6px;
+}
+
+.timeline-horizontal .timeline-item::after {
+    content: '';
+    display: block;
+    background: #06182E;
+    width: 20px;
+    height: 20px;
+    border-radius: 12px;
+    border: 3px solid #eee;
+    position: absolute;
+    left: 50%;
+    top: -28px;
+    margin-left: -6px;
+}
+
+.timeline-horizontal .timeline-item .item-date {
+    color: #eee;
+    display: block;
+    left: 40%;
+    font-size: 20px;
+    position: absolute;
+    top: -55px;
+}
+
+.timeline-horizontal .timeline-item .item-title {
+    color: #eee;
+    font-size: 15px;
+}
+
+.timeline-horizontal .timeline-item .item-description {
+    color: #eee;
+    font-size: 12px;
+}
+
+/*timeline  -----end-----*/
