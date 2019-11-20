@@ -6,9 +6,10 @@
 .wei-Outerframe .left-content {
     width: 25%;
     height: 100vh;
-    background: #c9d1d3;
+    /* background: #c9d1d3; */
     overflow: hidden;
     position: fixed;
+    background: #474853;
 }
 
 .wei-box .wei-img {
@@ -21,12 +22,12 @@
     border-radius: 10%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 40px;
-    box-shadow: 3px 3px 8px #777;
+    margin-top: 60px;
+    box-shadow: 1.5px 1.5px 8px #777;
 }
 
 .wei-sns {
-    margin-top: 20px;
+    margin-top: 60px;
     justify-content: center;
     text-align: center;
     display: flex;
@@ -34,37 +35,39 @@
     margin-right: auto;
 }
 
-
 .wei-sns .wei-icon-outer {
     text-align: center;
     width: 40px;
     height: 40px;
-    border-radius: 100%;
-    background: #1b2a49;
+    border-radius: 10%;
+    background: #AAA0a0;
     font-size: 20px;
     line-height: 40px;
     color: white;
     margin-right: 10px;
 }
 
-.sns-icon:hover {
+.wei-icon-outer:hover {
     cursor: pointer;
-    color: #00909e;
+    /* color: #5f6366; */
+    background: #4d6d9a;
 }
 
 .wei-content {
-    margin-top: 10px;
+    margin-top: 30px;
     width: 200px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .wei-content .c-name {
+    color: white;
     font-family: 'Noto Sans TC', sans-serif;
     font-size: 20px;
 }
 
 .wei-content .e-name {
+    color: white;
     font-family: Arial;
     font-size: 14px;
 }
@@ -87,7 +90,8 @@
 }
 
 .menubtn.active {
-    color: #1b2a49;
+    color: #fff;
+    /* color: #1b2a49; */
     opacity: 1;
 }
 
@@ -102,4 +106,28 @@
     height: 100vh;
     width: 100%;
     border-bottom: 1px solid rgb(185, 179, 179);
+}
+
+/*wrapperone--->start*/
+
+.wei-wrapper-body {
+    padding: 100px 40px 20px 60px;
+}
+
+.about-header h1 {
+    font-family: 'Noto Sans TC', sans-serif;
+    letter-spacing: 30px;
+}
+
+.about-header p {
+    color: #4e7a7c;
+    font-size: 14px;
+    letter-spacing: 4px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.about-content {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 16px;
+    letter-spacing: 3px;
 }
