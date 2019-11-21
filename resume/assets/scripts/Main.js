@@ -1,7 +1,13 @@
 window.onload = function () {
 
+    //to set the progress value
+    function progress_animate() {
+        $('.wrappertwo-content').find('.progress-bar').each(function () {
+            $(this).css('width', $(this).attr('aria-valuenow') + '%');
+        })
+    }
 
-    $(window).scroll(function () {
+    function set_scroll_init() {
         var currentscrollTop = $(window).scrollTop();
         var remove_active = function () {
             $('#menu').find('li.active').toggleClass('active');
@@ -19,7 +25,17 @@ window.onload = function () {
             remove_active()
             $('#menu').find('li').eq(3).toggleClass('active');
         }
+        //current scroll bottom = wrappertwo-content top position
+        if (($("#wrappertwo-content").offset().top) <= currentscrollTop + $(window).height() && currentscrollTop < $("#wrapperthree").offset().top) {
+            progress_animate();
+        }
 
+    }
+
+    set_scroll_init();
+
+    $(window).scroll(function () {
+        set_scroll_init();
     });
 
     $('#menu li').click(function () {
