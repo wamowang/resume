@@ -13,7 +13,7 @@
 }
 
 .wei-box .wei-img {
-    background-image: url('../images/me.jpg');
+    background-image: url('../images/me2.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -108,7 +108,37 @@
     border-bottom: 1px solid rgb(185, 179, 179);
 }
 
+/*todo */
+
+@media screen and (max-width: 900px) {
+    .wei-wrapper {
+        height: 100%;
+        width: 100%;
+        border-bottom: 1px solid rgb(185, 179, 179);
+    }
+}
+
 /*wrapperone--->start*/
+
+.wrapper-one {
+    display: flex;
+}
+
+.wrapperleft {
+    background-image: url('../images/me2.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-width: 50%;
+    min-height: 100vh;
+}
+
+.wrapperright {
+    position: relative;
+    right: 0;
+    width: 50%;
+    padding: 20vh 40px 20px 40px;
+}
 
 .wei-wrapper-body {
     position: relative;
@@ -132,6 +162,24 @@
     font-family: 'Noto Sans TC', sans-serif;
     font-size: 16px;
     letter-spacing: 3px;
+}
+
+.wei-icon-outer-right {
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background: #AAA0a0;
+    font-size: 30px;
+    line-height: 60px;
+    color: white;
+    margin-right: 30px;
+}
+
+.wei-icon-outer-right:hover {
+    cursor: pointer;
+    /* color: #5f6366; */
+    background: #4d6d9a;
 }
 
 /*two*/
@@ -206,6 +254,11 @@
     margin-bottom: 15px;
 }
 
+.worksdisplay-link:any-link {
+    text-decoration: none;
+    color: black;
+}
+
 .worksdisplay {
     background-color: rgba(218, 212, 212, 0.25);
     border-radius: 8px;
@@ -216,7 +269,6 @@
 }
 
 .worksdisplay::after {
-    border-radius: 8px;
     content: "";
     position: absolute;
     bottom: 0;
@@ -225,13 +277,13 @@
     height: 100%;
     opacity: 0.6;
     transform: scaleY(0);
-    transform-origin: bottom center;
+    transform-origin: bottom;
     background: -webkit-linear-gradient( black, white);
     background: -o-linear-gradient( black, white);
-    background: -moz-linear-gradient(black, white);
+    background: -moz-linear-gradient( black, white);
     background: linear-gradient( black, white);
     z-index: 2;
-    transition: transform 0.3s;
+    transition: transform 1s;
 }
 
 .worksdisplay:hover::after {
