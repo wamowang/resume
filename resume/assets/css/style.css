@@ -131,3 +131,33 @@
     font-size: 16px;
     letter-spacing: 3px;
 }
+
+/*two*/
+
+.wrappertwo-content {
+    margin-top: 30px;
+    /* display: flex; */
+}
+
+.progress-box {
+    width: 40%;
+    margin-bottom: 4vh;
+}
+
+.progress-outer {
+    height: 12px;
+    background-color: #86b3D1;
+    border-radius: 6px;
+}
+
+.progress-hrader {
+    margin-bottom: 2vh;
+}
+
+.progress-outer .progress-bar {
+    background-color: #4d6d9a;
+    font-size: 12px;
+    height: 12px;
+    line-height: 12px;
+    border-radius: 6px;
+}
