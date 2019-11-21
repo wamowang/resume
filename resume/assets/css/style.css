@@ -111,7 +111,9 @@
 /*wrapperone--->start*/
 
 .wei-wrapper-body {
-    padding: 100px 40px 20px 60px;
+    position: relative;
+    top: 10vh;
+    padding: 0px 40px 20px 60px;
 }
 
 .about-header h1 {
@@ -160,4 +162,134 @@
     height: 12px;
     line-height: 12px;
     border-radius: 6px;
+}
+
+/*three*/
+
+.wrapperthree-body {
+    position: relative;
+    top: 20vh
+}
+
+.exp-date {
+    font-size: 10px;
+    color: gray;
+    opacity: 0.9;
+    letter-spacing: 3px;
+}
+
+.exp-title {
+    position: relative;
+    top: 4px;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.exp-content {
+    position: relative;
+    top: 4px;
+    margin-top: 4px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    opacity: 0.8;
+}
+
+/*four */
+
+.worksdisplay-outer {
+    position: relative;
+}
+
+.worksdisplay-outer .title {
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.worksdisplay {
+    background-color: rgba(218, 212, 212, 0.25);
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 1.5px 1.5px 8px rgb(173, 168, 168);
+    position: relative;
+    z-index: 1;
+}
+
+.worksdisplay::after {
+    border-radius: 8px;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    transform: scaleY(0);
+    transform-origin: bottom center;
+    background: -webkit-linear-gradient( black, white);
+    background: -o-linear-gradient( black, white);
+    background: -moz-linear-gradient(black, white);
+    background: linear-gradient( black, white);
+    z-index: 2;
+    transition: transform 0.3s;
+}
+
+.worksdisplay:hover::after {
+    border-radius: 8px;
+    transform: scaleY(1);
+}
+
+.worksdisplay:hover {
+    cursor: pointer;
+}
+
+.wei-works-img1 {
+    border-radius: 8px 8px 0px 0px;
+    background-image: url('../images/works01.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 160px;
+}
+
+.wei-works-img3 {
+    border-radius: 8px 8px 0px 0px;
+    background-image: url('../images/works03.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 160px;
+}
+
+.wei-works-img4 {
+    border-radius: 8px 8px 0px 0px;
+    background-image: url('../images/works04.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 160px;
+}
+
+.wei-works-img5 {
+    border-radius: 8px 8px 0px 0px;
+    background-image: url('../images/works05.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 160px;
+}
+
+.worksdisplay-title {
+    margin-top: 4px;
+    letter-spacing: 3px;
+}
+
+.worksdisplay-content {
+    margin-top: 4px;
+    margin-bottom: 8px;
+    letter-spacing: 3px;
 }

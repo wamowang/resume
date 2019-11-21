@@ -12,13 +12,13 @@ window.onload = function () {
         var remove_active = function () {
             $('#menu').find('li.active').toggleClass('active');
         }
-        if (currentscrollTop == $("#wrapperone").offset().top && currentscrollTop < $("#wrappertwo").offset().top) {
+        if (currentscrollTop == $("#wrapperone").offset().top && currentscrollTop < $("#wrappertwo").offset().top - 100) {
             remove_active()
             $('#menu').find('li').eq(0).toggleClass('active');
-        } else if (($("#wrappertwo").offset().top - 10) <= currentscrollTop && currentscrollTop < $("#wrapperthree").offset().top) {
+        } else if (($("#wrappertwo").offset().top - 10) <= currentscrollTop && currentscrollTop < $("#wrapperthree").offset().top - 100) {
             remove_active()
             $('#menu').find('li').eq(1).toggleClass('active');
-        } else if (($("#wrapperthree").offset().top - 10) <= currentscrollTop && currentscrollTop < $("#wrapperfour").offset().top) {
+        } else if (($("#wrapperthree").offset().top - 10) <= currentscrollTop && currentscrollTop < $("#wrapperfour").offset().top - 100) {
             remove_active()
             $('#menu').find('li').eq(2).toggleClass('active');
         } else if (($("#wrapperfour").offset().top - 20) <= currentscrollTop) {
