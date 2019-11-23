@@ -19,7 +19,6 @@
 <body class="landing">
     <div class="wei-Outerframe">
         <div class="left-content">
-
             <div class="wei-box">
                 <div class='wei-img'>
                 </div>
@@ -48,14 +47,33 @@
                                 class="far fa-envelope sns-icon"></i></a></div>
                 </div>
             </div>
-
         </div>
-
+        <nav class="menu-phone">
+            <ul id="menuUl" class="menu-phone-active">
+                <li class="current-active">
+                    <a>關於我</a>
+                </li>
+                <li>
+                    <a>技術能力</a>
+                </li>
+                <li>
+                    <a>職涯經歷</a>
+                </li>
+                <li>
+                    <a>作品</a>
+                </li>
+            </ul>
+            <a id="menubtn" class="toggle-nav" href="#">
+                <i class="fas fa-bars"></i>
+            </a>
+        </nav>
         <div class="right-content">
             <div id="wrapperone" class="wei-wrapper">
                 <div class="wrapper-one">
-                    <div class='wrapperleft'>
+                    <div class="zoom">
+                        <div class='wrapperleft'>
 
+                        </div>
                     </div>
                     <div class='wrapperright'>
                         <div class="about-header">
@@ -63,9 +81,9 @@
                             <p>Frontend developer</p>
                         </div>
                         <div class="about-content">
-                            <p>畢業於大同大學資訊經營系，興趣是看電影看書和到處走走吃吃，偶爾喜歡逛逛展覽。大學就特地選修許多程式語言相關的課程，
+                            <p>畢業於大同大學資訊經營系，興趣是看電影看書和到處走走吃吃，偶爾喜歡逛逛展覽。大學特地選修許多程式語言相關的課程包含手機程式設計、網頁設計、ios等等課程。
                                 之前擔任過兩年半的APP開發工程師，主要是javascript + html + angularjs，基本上就是跨平台的網頁相關讓我對前端開始有興趣，
-                                之後擔任過半年的前端網頁工程師，目前住在文山區，自己有在寫部落格在左邊有連結，歡迎大家能一起討論也能透過旁邊信箱聯絡我。
+                                之後擔任過半年的前端網頁工程師，目前住在文山區，自己有在寫Blog在下方或左邊有連結，歡迎大家能一起討論也能透過旁邊信箱聯絡我。
                             </p>
                         </div>
 
@@ -73,13 +91,14 @@
                             <div class='wei-icon-outer-right'> <a target="_blank" href="http://weiupward.com/"
                                     style="color: white;"><i class="fas fa-blog sns-icon"></i>
                                 </a></div>
-                            <div class='wei-icon-outer-right'><a target="_blank" href="https://github.com/weimowang/resume"
-                                    style="color: white;"><i class="fab fa-github sns-icon"></i></a> </div>
+                            <div class='wei-icon-outer-right'><a target="_blank"
+                                    href="https://github.com/weimowang/resume" style="color: white;"><i
+                                        class="fab fa-github sns-icon"></i></a> </div>
                             <div class='wei-icon-outer-right'><a target="_blank"
                                     href="https://codepen.io/weiupward/pens/public" style="color: white;"><i
                                         class="fab fa-codepen sns-icon"></i></a></div>
-                            <div class='wei-icon-outer-right'><a href="mailto:wamowang@hotail.com" style="color: white;"><i
-                                        class="far fa-envelope sns-icon"></i></a></div>
+                            <div class='wei-icon-outer-right'><a href="mailto:wamowang@hotail.com"
+                                    style="color: white;"><i class="far fa-envelope sns-icon"></i></a></div>
                         </div>
                     </div>
 
@@ -225,16 +244,16 @@
                 </div>
 
             </div>
-            <div id="wrapperfour" class="wei-wrapper" style="height:130vh;">
+            <div id="wrapperfour" class="wei-wrapper wrapperfour">
                 <div class="wei-wrapper-body">
                     <div class="wei-header">
                         <h1>作品</h1>
                     </div>
 
                     <div class="worksdisplay-outer">
-                        <div class="title">web</div>
+                        <div class="title">網頁web</div>
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-md-4 worksdisplay-box">
                                 <a target="block" href="http://weimow.sg-host.com/" class="worksdisplay-link">
                                     <div class="worksdisplay">
                                         <div class="wei-works-img1"></div>
@@ -244,18 +263,18 @@
                                 </a>
 
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 worksdisplay-box">
                                 <a target="block" href="http://weimow.sg-host.com/" class="worksdisplay-link">
                                     <div class="worksdisplay">
 
-                                        <div class="wei-works-img1"></div>
+                                        <div class="wei-works-img2"></div>
 
-                                        <div class="worksdisplay-title">商品展示＋搜尋</div>
+                                        <div class="worksdisplay-title">履歷</div>
                                         <div class="worksdisplay-content">html+css+jquery</div>
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 worksdisplay-box">
                                 <a target="block" href="https://weiupward.com/" class="worksdisplay-link">
                                     <div class="worksdisplay">
 
@@ -269,9 +288,9 @@
                         </div>
                     </div>
                     <div class="worksdisplay-outer">
-                        <div class="title">App</div>
+                        <div class="title">行動裝置App</div>
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-md-4 worksdisplay-box">
                                 <a target="block" href="https://apps.apple.com/us/app/powercloud/id989675113"
                                     class="worksdisplay-link">
 
@@ -283,7 +302,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 worksdisplay-box">
                                 <a target="block"
                                     href="https://apps.apple.com/tw/app/%E9%9B%B2%E9%9B%86%E9%AB%94%E9%81%A9%E8%83%BD/id1274980641"
                                     class="worksdisplay-link">

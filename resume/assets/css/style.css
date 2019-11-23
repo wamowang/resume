@@ -12,6 +12,100 @@
     background: #474853;
 }
 
+.menu {
+    display: none;
+}
+
+.wei-Outerframe .right-content {
+    width: 75%;
+    overflow: auto;
+    position: absolute;
+    right: 0;
+}
+
+.wei-Outerframe .right-content .wei-wrapper {
+    height: 100vh;
+    width: 100%;
+    border-bottom: 1px solid rgb(185, 179, 179);
+}
+
+/*rwd small size */
+
+@media screen and (max-width: 900px) {
+    .wei-wrapper {
+        height: 100%;
+        width: 100%;
+        border-bottom: 1px solid rgb(185, 179, 179);
+        display: block;
+    }
+    .wei-Outerframe {
+        display: block;
+    }
+    .wei-Outerframe .left-content {
+        display: none;
+    }
+    .menu-phone {
+        position: relative;
+        width: 100%;
+        height: 7vh;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+        border-radius: 3px 3px 0px 0px;
+        background: #272626;
+    }
+    .toggle-nav {
+        position: absolute;
+        top: 2vh;
+        left: 3%;
+        color: #ffffff!important;
+        text-decoration: none;
+    }
+    .toggle-nav.active {
+        top: 2vh;
+    }
+    .menu-phone ul.menu-phone-active {
+        display: none;
+    }
+    .menu-phone ul {
+        position: relative;
+        top: 6.8vh;
+        left: 0px;
+        padding: 10px 25px;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+        border-radius: 0px 0px 3px 3px;
+        background: #272626;
+        z-index: 1000;
+    }
+    .menu-phone li {
+        margin: 10px 0px 10px 10px;
+        display: block;
+        color: white;
+    }
+    .menu-phone a {
+        display: block;
+        text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
+        color: rgb(146, 151, 150)!important;
+        transition: color linear 0.15s;
+        cursor: pointer;
+    }
+    .menu-phone a:hover, .menu-phone .current-active a {
+        text-decoration: none;
+        color: white!important;
+    }
+    .toggle-nav i {
+        color: white;
+        font-size: 20px;
+    }
+    .wei-Outerframe .right-content {
+        width: 100%;
+        position: relative;
+    }
+    .wei-Outerframe .right-content .wei-wrapper {
+        height: 100%;
+        width: 100%;
+        border-bottom: 1px solid rgb(185, 179, 179);
+    }
+}
+
 .wei-box .wei-img {
     background-image: url('../images/me2.jpg');
     background-size: cover;
@@ -73,6 +167,8 @@
 }
 
 .wei-menu {
+    position: relative;
+    top: 3vh;
     width: 200px;
     list-style: none;
     margin-left: 10px;
@@ -95,33 +191,11 @@
     opacity: 1;
 }
 
-.wei-Outerframe .right-content {
-    width: 75%;
-    overflow: auto;
-    position: absolute;
-    right: 0;
-}
-
-.wei-Outerframe .right-content .wei-wrapper {
-    height: 100vh;
-    width: 100%;
-    border-bottom: 1px solid rgb(185, 179, 179);
-}
-
-/*todo */
-
-@media screen and (max-width: 900px) {
-    .wei-wrapper {
-        height: 100%;
-        width: 100%;
-        border-bottom: 1px solid rgb(185, 179, 179);
-    }
-}
-
 /*wrapperone--->start*/
 
 .wrapper-one {
     display: flex;
+    overflow: hidden;
 }
 
 .wrapperleft {
@@ -131,6 +205,18 @@
     background-repeat: no-repeat;
     min-width: 50%;
     min-height: 100vh;
+    transition: transform 1s ease;
+}
+
+.zoom {
+    min-width: 50%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.wrapperleft:hover {
+    cursor: zoom-in;
+    transform: scale(1.08);
 }
 
 .wrapperright {
@@ -182,11 +268,44 @@
     background: #4d6d9a;
 }
 
+@media screen and (max-width: 900px) {
+    .wrapper-one {
+        display: inline-block;
+        max-height: 100%;
+    }
+    .zoom {
+        min-width: 100%;
+        min-height: 50%;
+        overflow: hidden;
+    }
+    .wrapperleft {
+        background-image: url('../images/me2.jpg');
+        background-size: cover;
+        background-position: 50% 35%;
+        ;
+        background-repeat: no-repeat;
+        min-width: 100%;
+        min-height: 50vh;
+        transition: transform 1s ease;
+    }
+    .wrapperright {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        padding: 5vh 40px 20px 40px;
+    }
+    .wei-wrapper-body {
+        position: relative;
+        top: 0;
+        margin-top: 5vh;
+        padding: 0px 40px 20px 60px;
+    }
+}
+
 /*two*/
 
 .wrappertwo-content {
     margin-top: 30px;
-    /* display: flex; */
 }
 
 .progress-box {
@@ -210,6 +329,12 @@
     height: 12px;
     line-height: 12px;
     border-radius: 6px;
+}
+
+@media screen and (max-width: 900px) {
+    .wrappertwo-content {
+        height: 100%;
+    }
 }
 
 /*three*/
@@ -242,10 +367,26 @@
     opacity: 0.8;
 }
 
+@media screen and (max-width: 900px) {
+    .wrapperthree-body {
+        position: relative;
+        top: 0;
+        margin-top: 20px;
+    }
+    .exp-box {
+        margin-top: 6vh;
+        margin-bottom: 6vh;
+    }
+}
+
 /*four */
 
 .worksdisplay-outer {
     position: relative;
+}
+
+.wrapperfour {
+    height: 130vh;
 }
 
 .worksdisplay-outer .title {
@@ -305,6 +446,16 @@
     height: 160px;
 }
 
+.wei-works-img2 {
+    border-radius: 8px 8px 0px 0px;
+    background-image: url('../images/works02.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 160px;
+}
+
 .wei-works-img3 {
     border-radius: 8px 8px 0px 0px;
     background-image: url('../images/works03.png');
@@ -344,4 +495,16 @@
     margin-top: 4px;
     margin-bottom: 8px;
     letter-spacing: 3px;
+}
+
+@media screen and (max-width: 900px) {
+    .worksdisplay-outer {
+        margin-top: 10px;
+    }
+    .wrapperfour {
+        height: 100%;
+    }
+    .worksdisplay-box {
+        margin: 20px 0px 20px 0px;
+    }
 }
