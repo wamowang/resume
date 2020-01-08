@@ -167,12 +167,17 @@
 }
 
 .wei-menu {
-    position: relative;
-    top: 3vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
     width: 200px;
     list-style: none;
-    margin-left: 10px;
-    /* display: table; */
+  
+}
+
+.wei-menu li {
+    position: relative;
+    left: -32%;
 }
 
 .menubtn:hover {
@@ -386,7 +391,7 @@
 }
 
 .wrapperfour {
-    height: 130vh!important;
+    height: 160vh!important;
 }
 
 .worksdisplay-outer .title {
