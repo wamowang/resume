@@ -3,5 +3,5 @@
 <br>
 作品為自己所開發之專案或是公司所負責之專案的連結，
 <br>
-其中的html、css 、jquery、javascript切版和皆為自己練習所設計。
+其中的html、css 、sass 、jquery、javascript切版和皆為自己練習所設計。
 

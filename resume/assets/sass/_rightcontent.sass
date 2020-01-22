@@ -1,0 +1,217 @@
+
+//computer
+@mixin pc-width()
+    @media all and (min-width: $pc-media)
+        @content
+
+//phone pad
+@mixin ph-width()
+    @media all and (max-width: $phone-media)
+        @content
+
+$weiborder-c-1:rgb(185, 179, 179)
+$weitest-c:#4e7a7c
+$weibg-c-i:#AAA0a0
+$weibg-c-2:#4d6d9a
+$wei-sns-wh:60px    
+$wei-header-ls:30px
+$pc-media:900px
+$phone-media:899px
+.wei-Outerframe
+    .right-content
+        width: 75%
+        overflow: auto
+        position: absolute
+        right: 0
+        @include ph-width()
+            width: 100%
+        .wei-wrapper
+            height: 100vh
+            width: 100%
+            border-bottom: 1px solid $weiborder-c-1
+            @include ph-width()
+                height: 100%
+                width: 100%
+                border-bottom: 1px solid rgb(185, 179, 179)
+                display: block
+            &.wrapperfour
+                height: 160vh!important
+                border-bottom: none
+                @include ph-width()
+                    height: 100%
+            .wrapper-one
+                display: flex
+                overflow: hidden
+                @include ph-width()
+                    display: inline-block
+                    max-height: 100%
+                .zoom
+                    min-width: 50%
+                    min-height: 100vh
+                    overflow: hidden
+                    @include ph-width()
+                        min-width: 100%
+                        min-height: 50%
+                        overflow: hidden
+                    .wrapperleft
+                        background-image: url('../images/me2.jpg')
+                        background-size: cover
+                        background-position: center center
+                        background-repeat: no-repeat
+                        min-width: 50%
+                        min-height: 100vh
+                        transition: transform 1s ease
+                        @include ph-width()
+                            background-image: url('../images/me2.jpg')
+                            background-size: cover
+                            background-position: 50% 35%
+                            background-repeat: no-repeat
+                            min-width: 100%
+                            min-height: 50vh
+                            transition: transform 1s ease
+                        &:hover,&:focus
+                            cursor: zoom-in
+                            transform: scale(1.08)
+                .wrapperright
+                    position: relative
+                    right: 0
+                    width: 50%
+                    padding: 20vh 40px 20px 40px
+                    @include ph-width()
+                        position: relative
+                        height: 100%
+                        width: 100%
+                        padding: 5vh 40px 20px 40px
+                    .about-header
+                        @include ph-width()
+                            text-align: center
+                        h1
+                            font-family: 'Noto Sans TC', sans-serif
+                            letter-spacing: $wei-header-ls
+                        p
+                            color: $weitest-c
+                            font-size: 14px
+                            letter-spacing: 4px
+                            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+                    .about-content
+                        font-family: 'Noto Sans TC', sans-serif
+                        font-size: 16px
+                        letter-spacing: 3px
+                    .wei-sns
+                        margin-top: 60px
+                        justify-content: center
+                        text-align: center
+                        display: flex
+                        margin-left: auto
+                        margin-right: auto
+                        .wei-icon-outer-right
+                            text-align: center
+                            width: $wei-sns-wh
+                            height: $wei-sns-wh
+                            border-radius: 100%
+                            background: $weibg-c-i
+                            font-size: $wei-sns-wh/2
+                            line-height: $wei-sns-wh
+                            color: white
+                            margin-right: $wei-sns-wh/2
+                            &:hover,&:focus
+                                cursor: pointer
+                                background: $weibg-c-2
+        .wei-wrapper-body
+            position: relative
+            top: 10vh
+            padding: 0px 40px 20px 60px
+            @include ph-width()
+                position: relative
+                top: 0
+                margin-top: 5vh
+                padding: 0px 40px 20px 60px
+                .wei-header
+                    @include ph-width()
+                        text-align: center
+            .wrappertwo-content
+                margin-top: 30px
+                @include ph-width()
+                    height: 100%
+            .wrapperthree-body
+                position: relative
+                top: 20vh
+                @include ph-width()
+                    position: relative
+                    top: 0
+                    margin-top: 20px
+                .exp-outer
+                    .exp-box
+                        @include ph-width()
+                            margin-top: 6vh
+                            margin-bottom: 6vh
+                        .exp-date
+                            font-size: 10px
+                            color: gray
+                            opacity: 0.9
+                            letter-spacing: 3px
+                        .exp-title
+                            position: relative
+                            top: 4px
+                            font-size: 16px
+                            letter-spacing: 1px
+                        .exp-content
+                            position: relative
+                            top: 4px
+                            margin-top: 4px
+                            font-size: 14px
+                            letter-spacing: 1px
+                            opacity: 0.8
+            .worksdisplay-outer
+                position: relative
+                @include ph-width()
+                    margin-top: 10px
+                .title
+                    font-size: 18px
+                    margin-top: 15px
+                    margin-bottom: 15px
+                    @include ph-width()
+                        text-align: center
+                .row
+                    margin: 15px 0
+                    .worksdisplay-box
+                        @include ph-width()
+                            margin: 20px 0px 20px 0px
+                        .worksdisplay-link
+                            &:any-link
+                                text-decoration: none
+                                color: black
+                            .worksdisplay
+                                background-color: rgba(218, 212, 212, 0.25)
+                                border-radius: 8px
+                                text-align: center
+                                box-shadow: 1.5px 1.5px 8px rgb(173, 168, 168)
+                                position: relative
+                                &::after
+                                    content: ""
+                                    position: absolute
+                                    bottom: 0
+                                    left: 0
+                                    width: 100%
+                                    height: 100%
+                                    opacity: 0.6
+                                    transform: scaleY(0)
+                                    transform-origin: bottom
+                                    background: -webkit-linear-gradient( black, white)
+                                    background: -o-linear-gradient( black, white)
+                                    background: -moz-linear-gradient( black, white)
+                                    background: linear-gradient( black, white)
+                                    z-index: 2
+                                    transition: transform 1s
+                                &:hover
+                                    cursor: pointer
+                                &:hover::after
+                                    border-radius: 8px
+                                    transform: scaleY(1)
+                                    .worksdisplay-title
+                                        margin-top: 4px
+                                        letter-spacing: 3px
+                                    .worksdisplay-content
+                                        margin-top: 4px
+                                        margin-bottom: 8px
+                                        letter-spacing: 3px
