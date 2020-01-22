@@ -5,9 +5,11 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="../resume/assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <script src="../resume/assets/js_lib/jquery-3.3.1.min.js"></script>
 
+    <!--add aos plugin-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
     <script src="https://kit.fontawesome.com/3b2516a060.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
@@ -23,12 +25,12 @@
                 <div class='wei-img'>
                 </div>
 
-                <div class='wei-content'>
+                <div class='wei-content' data-aos="fade-right" data-aos-delay="200" data-aos-duration="500">
                     <div class="c-name">王維摩</div>
                     <div class="e-name">Wei Mo Wang</div>
 
                 </div>
-                <ul id="menu" class="wei-menu">
+                <ul id="menu" class="wei-menu" data-aos="fade-right" data-aos-delay="200" data-aos-duration="500">
                     <li class="menubtn active">關於我</li>
                     <li class="menubtn">技術能力</li>
                     <li class="menubtn">職涯經歷</li>
@@ -76,18 +78,19 @@
                         </div>
                     </div>
                     <div class='wrapperright'>
-                        <div class="about-header">
+                        <div class="about-header" data-aos="fade-left" data-aos-delay="200" data-aos-duration="500">
                             <h1>王維摩</h1>
                             <p>Frontend developer</p>
                         </div>
-                        <div class="about-content">
+                        <div class="about-content" data-aos="fade-left" data-aos-delay="300" data-aos-duration="600">
                             <p>畢業於大同大學資訊經營系，興趣是看電影看書和到處走走吃吃，偶爾喜歡逛逛展覽。大學特地選修許多程式語言相關的課程包含手機程式設計、網頁設計、ios等等課程。
                                 之前擔任過兩年半的APP開發工程師，主要是javascript + html + angularjs，基本上就是跨平台的網頁相關讓我對前端開始有興趣，
                                 之後擔任過半年的前端網頁工程師，目前住在文山區，自己有在寫Blog在下方或左邊有連結，歡迎大家能一起討論也能透過旁邊信箱聯絡我。
                             </p>
                         </div>
 
-                        <div class='wei-sns'>
+                        <div class='wei-sns' data-aos="fade-up" data-aos-delay="300" data-aos-duration="600"
+                            data-aos-offset="-400">
                             <div class='wei-icon-outer-right'> <a target="_blank" href="http://weiupward.com/"
                                     style="color: white;"><i class="fas fa-blog sns-icon"></i>
                                 </a></div>
@@ -222,19 +225,19 @@
                     </div>
                     <div class="wrapperthree-body">
                         <div class="row exp-outer">
-                            <div class="exp-box col-md-4">
+                            <div class="exp-box col-md-4" data-aos="fade-up" data-aos-delay="200">
                                 <div class="exp-date">2019/4 - 2019/9</div>
                                 <div class="exp-title">前端工程師</div>
                                 <div class="exp-content">主要負責前端網頁開發，內容為線上的公文系統開發包含簽章簽核、郵務、公文流程，負責像是政府機關和學校與公司行號。</div>
                             </div>
-                            <div class="exp-box col-md-4">
+                            <div class="exp-box col-md-4" data-aos="fade-up" data-aos-delay="250">
                                 <div class="exp-date">2016/12 - 2019/3</div>
                                 <div class="exp-title">App/前端研發工程師</div>
                                 <div class="exp-content">主要為App開發，包含IOS和Android還有UWP
                                     windows平台的開發，主要透過javascript+angularjs+cordova來達成跨平台的開發，包含簽到選課系統和公司主要的NAS管理開發。
                                 </div>
                             </div>
-                            <div class="exp-box col-md-4">
+                            <div class="exp-box col-md-4" data-aos="fade-up" data-aos-delay="300">
                                 <div class="exp-date">2015/12 - 2016/8</div>
                                 <div class="exp-title">sap工程師</div>
                                 <div class="exp-content">主要負責sap開發包含ERP的一些系統，提供組織表單查詢和bom表等的相關處理。</div>
@@ -253,7 +256,8 @@
                     <div class="worksdisplay-outer">
                         <div class="title">網頁web</div>
                         <div class="row">
-                            <div class="col-md-4 worksdisplay-box">
+                            <div class="col-md-4 worksdisplay-box" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000">
                                 <a target="block" href="http://weimow4.sg-host.com/" class="worksdisplay-link">
                                     <div class="worksdisplay">
                                         <div class="wei-works-img1"></div>
@@ -263,7 +267,8 @@
                                 </a>
 
                             </div>
-                            <div class="col-md-4 worksdisplay-box">
+                            <div class="col-md-4 worksdisplay-box" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000">
                                 <a target="block" href="http://weimow1.sg-host.com/" class="worksdisplay-link">
                                     <div class="worksdisplay">
 
@@ -274,7 +279,8 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-md-4 worksdisplay-box">
+                            <div class="col-md-4 worksdisplay-box" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000">
                                 <a target="block" href="http://weimow2.sg-host.com/" class="worksdisplay-link">
                                     <div class="worksdisplay">
                                         <div class="wei-works-img3"></div>
@@ -288,7 +294,8 @@
 
                     <div class="worksdisplay-outer">
                         <div class="row">
-                            <div class="col-md-4 worksdisplay-box">
+                            <div class="col-md-4 worksdisplay-box" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000">
                                 <a target="block" href="http://weimow.sg-host.com/" class="worksdisplay-link">
                                     <div class="worksdisplay">
                                         <div class="wei-works-img4"></div>
@@ -302,7 +309,8 @@
                     <div class="worksdisplay-outer">
                         <div class="title">行動裝置App</div>
                         <div class="row">
-                            <div class="col-md-4 worksdisplay-box">
+                            <div class="col-md-4 worksdisplay-box" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000">
                                 <a target="block" href="https://apps.apple.com/us/app/powercloud/id989675113"
                                     class="worksdisplay-link">
 
@@ -314,7 +322,8 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-md-4 worksdisplay-box">
+                            <div class="col-md-4 worksdisplay-box" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000">
                                 <a target="block"
                                     href="https://apps.apple.com/tw/app/%E9%9B%B2%E9%9B%86%E9%AB%94%E9%81%A9%E8%83%BD/id1274980641"
                                     class="worksdisplay-link">
@@ -337,7 +346,10 @@
     </div>
 
     <script src="../resume/assets/scripts/Main.js"></script>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

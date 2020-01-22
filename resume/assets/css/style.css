@@ -474,7 +474,7 @@
   }
   .landing .wei-Outerframe .menu-phone li.current-active a {
     text-decoration: none;
-    color: white !important;
+    color: #ffffff;
   }
   .landing .wei-Outerframe .menu-phone a {
     color: #929796;
@@ -497,7 +497,7 @@
   top: 2vh;
 }
 .landing .wei-Outerframe .menu-phone .toggle-nav.active i {
-  color: white;
+  color: #ffffff;
   font-size: 20px;
 }
 
